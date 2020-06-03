@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lemonchiffon;
+    background-color: white;
   background-image: 
      url(images/wallper1.jpg);
 /*    url('https://www.muralswallpaper.co.uk/app/uploads/Watermelon-Website-Swatch.jpg');*/
@@ -8,14 +8,13 @@ body {
     /*url('https://www.muralswallpaper.co.uk/app/uploads/Green-Carrot-Cake-Baking-Wallpaper-Mural-Plain.jpg');*/
     
     background-position: left top;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
 }
-
 img {
     width: 500px;
     border: 2px solid black;
 }
-aside li{
+ul {
     list-style-type: none;
 }
 aside h3{
@@ -29,7 +28,7 @@ h3 {
 }
 
 header {
-    background: pink;
+    background: #ffc0cb;
     color: black;
 }
 
@@ -58,12 +57,14 @@ header{
 aside{
     grid-area: aside;
 }
-.main{
-
+footer{
+    grid-area: footer;
 }
 .main{
- width: 1000px;
+/* width: 1000px;*/
     background-color: antiquewhite;
+    padding: 5px 15px;
+    margin: 10px;
 }
 
 .main p {
@@ -99,13 +100,18 @@ aside{
     margin: -270px 0px -40px -5px;
     border: none;
 }
-
-.footer ul {
+footer {
+        background: pink;
+}
+footer ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 10px;
 }
-
+footer li {
+margin-right: 10px;
+}
 /*
 .crop {
    float: right;
