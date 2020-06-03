@@ -36,7 +36,6 @@ aside {
     background: #6d694a;
     color: white;
 }
-
 .grid-conteiner {
     /*
     display: flex;
@@ -56,6 +55,23 @@ header{
 }
 aside{
     grid-area: aside;
+}
+aside ul{
+    padding: 10px 15px;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    background: #6d694a;
+    color: white;
+}
+a:hover{
+    color: burlywood;
+    text-decoration: underline;
+}
+a:visited {
+    color: burlywood;
 }
 footer{
     grid-area: footer;
