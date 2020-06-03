@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    background-color: lemonchiffon;
+  background-image: 
+     url(images/wallper1.jpg);
+/*    url('https://www.muralswallpaper.co.uk/app/uploads/Watermelon-Website-Swatch.jpg');*/
+/*    url('https://www.muralswallpaper.co.uk/app/uploads/Orange-Carrot-Cake-Baking-Wallpaper-Mural-Plain.jpg');*/
+    /*url('https://www.muralswallpaper.co.uk/app/uploads/Green-Carrot-Cake-Baking-Wallpaper-Mural-Plain.jpg');*/
+    
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+
+img {
+    width: 500px;
+    border: 2px solid black;
+}
+aside li{
+    list-style-type: none;
+}
+aside h3{
+    background: pink;
+    color: black;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+header {
+    background: pink;
+    color: black;
+}
+
+aside {
+    background: #6d694a;
+    color: white;
+}
+
+.grid-conteiner {
+    /*
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+*/
+    display: grid;
+    grid-template-areas: "header header"
+        "aside main"
+        "footer footer";
+    grid-template-rows: 50px auto-fit 30px;
+    grid-template-columns: 300px 1fr;
+}
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+}
+.main{
+
+}
+.main{
+ width: 1000px;
+    background-color: antiquewhite;
+}
+
+.main p {
+    text-align: justify;
+}
+
+.name-ingredients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-direction: row-reverse;*/
+}
+
+.name-ingredients img,
+.name-ingredients .crop {
+    order: 2;
+
+}
+
+.ingredients {
+    margin-left: 20px;
+    width: 350px;
+}
+
+.crop {
+    float: right;
+    overflow: hidden;
+    outline: 2px solid black;
+
+}
+
+.crop img {
+    margin: -270px 0px -40px -5px;
+    border: none;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*
+.crop {
+   float: right;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    height: 350px;
+}
+.crop img{
+position: absolute;
+    top: -280px;
+    left: -5px;
+}
+*/
