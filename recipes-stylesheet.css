@@ -115,7 +115,8 @@ footer {
 }
 
 .ingredients {
-    margin-left: 20px;
+    margin-left: 5px;
+    padding-right: 5px;
     width: 350px;
 }
 
@@ -125,7 +126,11 @@ footer {
     outline: 2px solid black;
 
 }
-
+#crop img {
+    width: 500px;
+    margin: -210px 0px -60px -5px;
+    border: none;
+}
 .crop img {
     margin: -270px 0px -40px -5px;
     border: none;
