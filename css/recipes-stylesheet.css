@@ -120,6 +120,17 @@ img {
 
 /*  Header end */
 
+/* Scroll top start */
+
+.scroll_top {
+position: fixed;
+color: black;
+bottom: 0;
+right: 0;
+text-decoration: none;
+font-size: 2em;
+}
+
 /* Menu start*/
 .main__wrapper {
     display: flex;
