@@ -48,6 +48,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /*Базовые настройки для боди для того чтобы другие элементы могли унаследовать определенные стили*/
@@ -120,16 +121,47 @@ img {
 
 /*  Header end */
 
-/* Scroll top start */
+/* Scroll top start */   
 
-.scroll_top {
-position: fixed;
-color: black;
-bottom: 0;
-right: 0;
-text-decoration: none;
-font-size: 2em;
+.arrow{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 20px 20px 20px 10px;
 }
+    
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #5c2e2e;
+    border-right: 5px solid #5c2e2e;
+    transform: rotate(-135deg);
+    margin: -16px 0;
+    animation: arrow 2s infinite;
+    animation-direction: reverse;
+}
+.arrow span:nth-child(2){
+    animation-delay: 0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: 0.4s;
+}
+@keyframes arrow {
+    0%{
+        opacity: 0;
+        transform: translate(0,-20px) rotate(-135deg);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0,20px) rotate(-135deg);
+    }
+}
+
+/* Scroll top end */
 
 /* Menu start*/
 .main__wrapper {
