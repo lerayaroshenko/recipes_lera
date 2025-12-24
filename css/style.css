@@ -296,16 +296,12 @@ a { text-decoration: none; color: inherit; transition: var(--transition-fast); }
     font-size: 0.9rem;
     margin-bottom: 4px;
     position: relative;
-    padding-left: 14px;
+    padding-left: 0;
     color: var(--color-text-secondary);
 }
 
 .recipe-card__ingredients li::before {
-    content: "•";
-    color: var(--color-accent);
-    position: absolute;
-    left: 0;
-    font-weight: bold;
+    content: none;
 }
 
 .recipe-card__instructions {
