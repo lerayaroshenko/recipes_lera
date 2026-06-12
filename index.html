@@ -1,954 +1,1465 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кулинарные рецепты Валерии Ярошенко</title>
-    <meta name="description" content="Кулинарные рецепты Валерии Ярошенко - коллекция вкусных и домашних блюд." />
-    
+    <meta
+      name="description"
+      content="Кулинарные рецепты Валерии Ярошенко - коллекция вкусных и домашних блюд."
+    />
+
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="app-layout">
-        
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar">
-            <div class="sidebar__header">
-                <a href="#" class="logo">
-                     <img src="img/logo-main2.png" alt="Logo" class="logo__img">
-                </a>
-                <h1 class="sidebar__title">Рецепты<br><span>Валерии Ярошенко</span></h1>
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <a href="#" class="logo">
+            <img src="img/logo-main2.png" alt="Logo" class="logo__img" />
+          </a>
+          <h1 class="sidebar__title">
+            Рецепты<br /><span>Валерии Ярошенко</span>
+          </h1>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#strudel" class="nav__link">Венский штрудель</a></li>
+            <li><a href="#coconut" class="nav__link">Кокосовое печенье</a></li>
+            <li>
+              <a href="#chocolate" class="nav__link">Шоколадное брауни</a>
+            </li>
+            <li><a href="#oladiki" class="nav__link">Банановые оладьи</a></li>
+            <li><a href="#nut" class="nav__link">Нутовые котлетки</a></li>
+            <li><a href="#sushi" class="nav__link">Рис для суши</a></li>
+            <li><a href="#kulichi" class="nav__link">Пасхальные куличи</a></li>
+            <li>
+              <a href="#lazaniya" class="nav__link">Классическая Лазанья</a>
+            </li>
+            <li>
+              <a href="#kabachkovie_oladiki" class="nav__link"
+                >Кабачковые оладьи</a
+              >
+            </li>
+            <li><a href="#okroshka" class="nav__link">Окрошка с курицей</a></li>
+            <li><a href="#biscuit" class="nav__link">Шоколадный бисквит</a></li>
+            <li><a href="#pizza" class="nav__link">Тесто для пиццы</a></li>
+            <li><a href="#blinchiki" class="nav__link">Блинчики</a></li>
+            <li>
+              <a href="#kurochka_teriyaki" class="nav__link">Курочка Терияки</a>
+            </li>
+            <li><a href="#mayonez" class="nav__link">Домашний майонез</a></li>
+            <li>
+              <a href="#salat_morkov" class="nav__link">Салат с морковкой</a>
+            </li>
+            <li>
+              <a href="#tikvenij_pirog" class="nav__link">Тыквенный пирог</a>
+            </li>
+            <li>
+              <a href="#morkovnij_pirog" class="nav__link">Морковный пирог</a>
+            </li>
+            <li>
+              <a href="#tvorozhnoe_pechenje" class="nav__link"
+                >Творожное печенье</a
+              >
+            </li>
+            <li>
+              <a href="#salad_ananas" class="nav__link">Салат с ананасом</a>
+            </li>
+            <li>
+              <a href="#griby_sir" class="nav__link">Шампиньоны с сыром</a>
+            </li>
+            <li>
+              <a href="#semga_shpinat" class="nav__link">Семга в соусе</a>
+            </li>
+            <li>
+              <a href="#abrikos_tart" class="nav__link">Абрикосовый тарт</a>
+            </li>
+            <li><a href="#vishnya_tart" class="nav__link">Вишневый тарт</a></li>
+            <li><a href="#wafles" class="nav__link">Бельгийские вафли</a></li>
+            <li>
+              <a href="#salat_krevetki" class="nav__link">Салат с креветками</a>
+            </li>
+            <li>
+              <a href="#tikvennie_pankeiki" class="nav__link"
+                >Тыквенные панкейки</a
+              >
+            </li>
+            <li>
+              <a href="#rice_krevetki" class="nav__link">Рис с креветками</a>
+            </li>
+          </ul>
+        </nav>
+
+        <footer class="sidebar__footer">
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/valeriya.yarroshenko"
+              target="_blank"
+              class="socials__link"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/valeriya_yaroshenko"
+              target="_blank"
+              class="socials__link"
+              aria-label="Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+          <p class="copyright">&copy; 2026 Валерия Ярошенко</p>
+        </footer>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="mobile-header">
+          <div class="mobile-header__content">
+            <span class="mobile-header__title">Рецепты</span>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+
+        <div class="recipes-grid">
+          <article class="recipe-card" id="strudel">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/schtrudel.jpg"
+                alt="Штрудель"
+                loading="lazy"
+              />
             </div>
-            
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li><a href="#strudel" class="nav__link">Венский штрудель</a></li>
-                    <li><a href="#coconut" class="nav__link">Кокосовое печенье</a></li>
-                    <li><a href="#chocolate" class="nav__link">Шоколадное брауни</a></li>
-                    <li><a href="#oladiki" class="nav__link">Банановые оладьи</a></li>
-                    <li><a href="#nut" class="nav__link">Нутовые котлетки</a></li>
-                    <li><a href="#sushi" class="nav__link">Рис для суши</a></li>
-                    <li><a href="#kulichi" class="nav__link">Пасхальные куличи</a></li>
-                    <li><a href="#lazaniya" class="nav__link">Классическая Лазанья</a></li>
-                    <li><a href="#kabachkovie_oladiki" class="nav__link">Кабачковые оладьи</a></li>
-                    <li><a href="#okroshka" class="nav__link">Окрошка с курицей</a></li>
-                    <li><a href="#biscuit" class="nav__link">Шоколадный бисквит</a></li>
-                    <li><a href="#pizza" class="nav__link">Тесто для пиццы</a></li>
-                    <li><a href="#blinchiki" class="nav__link">Блинчики</a></li>
-                    <li><a href="#kurochka_teriyaki" class="nav__link">Курочка Терияки</a></li>
-                    <li><a href="#mayonez" class="nav__link">Домашний майонез</a></li>
-                    <li><a href="#salat_morkov" class="nav__link">Салат с морковкой</a></li>
-                    <li><a href="#tikvenij_pirog" class="nav__link">Тыквенный пирог</a></li>
-                    <li><a href="#morkovnij_pirog" class="nav__link">Морковный пирог</a></li>
-                    <li><a href="#tvorozhnoe_pechenje" class="nav__link">Творожное печенье</a></li>
-                    <li><a href="#salad_ananas" class="nav__link">Салат с ананасом</a></li>
-                    <li><a href="#griby_sir" class="nav__link">Шампиньоны с сыром</a></li>
-                    <li><a href="#semga_shpinat" class="nav__link">Семга в соусе</a></li>
-                    <li><a href="#abrikos_tart" class="nav__link">Абрикосовый тарт</a></li>
-                    <li><a href="#vishnya_tart" class="nav__link">Вишневый тарт</a></li>
-                    <li><a href="#wafles" class="nav__link">Бельгийские вафли</a></li>
-                    <li><a href="#salat_krevetki" class="nav__link">Салат с креветками</a></li>
-                    <li><a href="#tikvennie_pankeiki" class="nav__link">Тыквенные панкейки</a></li>
-                    <li><a href="#rice_krevetki" class="nav__link">Рис с креветками</a></li>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Венский штрудель с яблоками</h2>
+
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <div class="ingredients-group">
+                  <h4>Тесто:</h4>
+                  <ul>
+                    <li>🌾 Мука - 300г</li>
+                    <li>💧 Теплая вода - 150мл</li>
+                    <li>🌻 Растительное масло - 30 мл (2ст.л.)</li>
+                    <li>🧂 Соль - 0,5 ч.л.</li>
+                    <li>🧈 Растопленное сливочное масло - 50-100г</li>
+                  </ul>
+                </div>
+                <div class="ingredients-group">
+                  <h4>Начинка:</h4>
+                  <ul>
+                    <li>🍎 Яблоки (кислые) - 1кг</li>
+                    <li>🍇 Изюм - 150г</li>
+                    <li>🍬 Сахар - 140г</li>
+                    <li>🌰 Орехи - 100г</li>
+                    <li>🍞 Сухари - 100г</li>
+                    <li>🧈 Сливочное масло - 50г</li>
+                    <li>🤎 Корица - 1 ч.л.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Приготовим вытяжное тесто. Соединить в миске муку
+                  (предварительно просеять) и соль, перемешать. В центре сделать
+                  ямку, в которую влить подсолнечное масло и теплую воду.
+                  Замесить тесто. Оно должно получиться мягкое и не липнуть к
+                  рукам. Смазать тесто растительным маслом, обернуть в пленку и
+                  убрать в теплое место на 1 час.
+                </p>
+                <p>
+                  В это время можно заняться начинкой. 100 г сухарей измельчить
+                  в блендере. На сковороде растопить 50 г сливочного масла и
+                  обжарить измельченные сухари до золотистого цвета. Орехи
+                  обжарить, очистить и измельчить. Изюм залить кипятком. Через
+                  две минуты воду слить. Сахар смешать с корицей. Почищенные
+                  яблоки разрезать, удалить сердцевинки и нарезать мякоть
+                  тонкими пластинками.
+                </p>
+                <p>
+                  Через час застелить стол тканью, присыпать мукой. Тесто
+                  разделить на две части. Раскатать каждую часть, затем
+                  вытягивать руками до толщины папиросной бумаги. Накладываем
+                  начинку. Заворачиваем. Защипнуть края и перенести штрудель на
+                  противень. Смазать рулет растопленным маслом. Выпекать при 180
+                  ºC примерно 40 минут.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="coconut">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/coconut.jpg"
+                alt="Кокосовое печенье"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Кокосовое печенье</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🥥 Кокосовая стружка - 170г</li>
+                  <li>🥚 Яйцо - 2шт.</li>
+                  <li>🌿 Стевия (или сахар) - 50г</li>
                 </ul>
-            </nav>
-
-            <footer class="sidebar__footer">
-                <div class="socials">
-                    <a href="https://www.facebook.com/valeriya.yarroshenko" target="_blank" class="socials__link" aria-label="Facebook">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                    </a>
-                    <a href="https://www.instagram.com/valeriya_yaroshenko" target="_blank" class="socials__link" aria-label="Instagram">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    </a>
-                </div>
-                <p class="copyright">&copy; 2025 Валерия Ярошенко</p>
-            </footer>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <header class="mobile-header">
-                <div class="mobile-header__content">
-                    <span class="mobile-header__title">Рецепты</span>
-                    <button id="menu-toggle" class="menu-toggle" aria-label="Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </header>
-
-            <div class="recipes-grid">
-                
-                <article class="recipe-card" id="strudel">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/schtrudel.jpg" alt="Штрудель" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Венский штрудель с яблоками</h2>
-                        
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <div class="ingredients-group">
-                                <h4>Тесто:</h4>
-                                <ul>
-                                    <li>🌾 Мука - 300г</li>
-                                    <li>💧 Теплая вода - 150мл</li>
-                                    <li>🌻 Растительное масло - 30 мл (2ст.л.)</li>
-                                    <li>🧂 Соль - 0,5 ч.л.</li>
-                                    <li>🧈 Растопленное сливочное масло - 50-100г</li>
-                                </ul>
-                            </div>
-                            <div class="ingredients-group">
-                                <h4>Начинка:</h4>
-                                <ul>
-                                    <li>🍎 Яблоки (кислые) - 1кг</li>
-                                    <li>🍇 Изюм - 150г</li>
-                                    <li>🍬 Сахар - 140г</li>
-                                    <li>🌰 Орехи - 100г</li>
-                                    <li>🍞 Сухари - 100г</li>
-                                    <li>🧈 Сливочное масло - 50г</li>
-                                    <li>🤎 Корица - 1 ч.л.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Приготовим вытяжное тесто. Соединить в миске муку (предварительно просеять) и соль, перемешать. В центре сделать ямку, в которую влить подсолнечное масло и теплую воду. Замесить тесто. Оно должно получиться мягкое и не липнуть к рукам. Смазать тесто растительным маслом, обернуть в пленку и убрать в теплое место на 1 час.</p>
-                            <p>В это время можно заняться начинкой. 100 г сухарей измельчить в блендере. На сковороде растопить 50 г сливочного масла и обжарить измельченные сухари до золотистого цвета. Орехи обжарить, очистить и измельчить. Изюм залить кипятком. Через две минуты воду слить. Сахар смешать с корицей. Почищенные яблоки разрезать, удалить сердцевинки и нарезать мякоть тонкими пластинками.</p>
-                            <p>Через час застелить стол тканью, присыпать мукой. Тесто разделить на две части. Раскатать каждую часть, затем вытягивать руками до толщины папиросной бумаги. Накладываем начинку. Заворачиваем. Защипнуть края и перенести штрудель на противень. Смазать рулет растопленным маслом. Выпекать при 180 ºC примерно 40 минут.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card" id="coconut">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/coconut.jpg" alt="Кокосовое печенье" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Кокосовое печенье</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🥥 Кокосовая стружка - 170г</li>
-                                <li>🥚 Яйцо - 2шт.</li>
-                                <li>🌿 Стевия (или сахар) - 50г</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Взбиваем отдельно белки в густую пену (миксером или венчиком) с сахаром.
-                        Добавляем желтки и кокосовую стружку. Перемешиваем ложкой. Лепим шарики размером с грецкий орех.
-                        Выкладываем на пергаментную бумагу. Ставим в духовку на 180 градусов на 15 мин в обычном режиме.
-                        Далее если есть включаем режим с конвекцией и ждем пока зарумянится, по цвету чуть светлее чем
-                        на фото. Достаем, остужаем, кушаем.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card" id="chocolate">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/brauni.jpg" alt="Печенье брауни" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Печенье шоколадное брауни</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🌾 Пшеничная мука - 1 стакан</li>
-                                <li>🍫 Какао-порошок - 1/2 стакана</li>
-                                <li>🍬 Сахар - 1/2 стакана</li>
-                                <li>🧈 Сливочное масло - 60г</li>
-                                <li>🥚 Яйца - 2шт.</li>
-                                <li>🧁 Разрыхлитель - 1 ч.л.</li>
-                                <li>🍬 Сахарная пудра - 1/4 стакана</li>
-                                <li>🌼 Ванилин - 1/2 ч.л</li>
-                                <li>🧂 Соль - 1/4 ч.л</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Смешать муку, какао, разрыхлитель, соль и ванилин.
-                        Размягченное сливочное масло взбить с сахаром.
-                        Добавить яйца и снова взбить.
-                        Постепенно всыпать сухую смесь. Перемешать.
-                        Накрыть тесто пленкой и убрать в холодильник на 2–4 часа.
-                        Разогреть духовку до 180 °С. Застелить противень бумагой для выпечки.
-                        Сформировать из теста шарики. Густо обвалять их в сахарной пудре.
-                        Выложить на противень. Выпекать 10–15 мин.
-                        Печенье должно слегка затвердеть с краев, но остаться мягком в центре. Важно не передержать!</p>
-                        </div>
-                    </div>
-                </article>
-
-                 <article class="recipe-card" id="oladiki">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/oladiki.jpg" alt="Банановые оладьи" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Банановые оладьи ПП</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🍌 Банан - 3шт</li>
-                                <li>🥚 Яйцо - 1шт.</li>
-                                <li>🌿 Стевия (или сахар) - 1ст.л.</li>
-                                <li>🥛 Молоко - 250 мл(стакан)</li>
-                                <li>🌽 Кукурзная мука (можно обычную) - 250 г</li>
-                                <li>🧁 Разрыхлитель - 2 ч.л.</li>
-                                <li>🌻 Растительное масло - 2ст.л.</li>
-                                <li>🧂 Соль - щепотка</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Венчиком взбить яйцо, молоко, масло, сахарозаменитель и соль.
-                        Смешать муку с разрыхлителем. Просеять к жидким ингредиентам и перемешать.
-                        Бананы покрошить кубиками (не очень маленькими). Добавить их в тесто и перемешать.
-                        Жарить на небольшом количестве растительного, кокос или сливочного масла с двух сторон до
-                        золотистого цвета.</p>
-                        </div>
-                    </div>
-                </article>
-
-                 <article class="recipe-card" id="nut">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/kotlety-nut.jpg" alt="Нутовые котлетки" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Нутовые котлетки</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🌰 Нут - 500г</li>
-                                <li>🥤 Сода - 1ч.л.</li>
-                                <li>🥚 Яйцо - 2шт.</li>
-                                <li>🥕 Морковь - 2шт</li>
-                                <li>🧅 Лук - 2шт</li>
-                                <li>🌽 Кукурузная мука (для панировки)</li>
-                                <li>🌻 Масло для жарки, сухой чеснок, специи, соль</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Нут заливаем холодной водой, добавляем ложку соды, размешиваем и оставляем на ночь.
-                        Утром, воду сливаем, нут промываем. Заливаем чисто водой и варим до полной готовности (он должен
-                        развариться). Готовый нут откидываем на дуршлаг, даем стечь воду.
-                        Пропускаем нут через мясорубку. Следом за ним через мясорубку пропускаем лук, морковь. В эту
-                        массу добавляем яйца, соль, сухой чеснок и специи. Хорошо вымешивает.
-                        Лепим котлеты, обваливаем в кукурузной муке. Жарим на разогретой сковороде с маслом до румяной
-                        корочки.
-                        Подавать со сметанкой. Идеально подходят как гарнир.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card" id="sushi">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/rice-sushi.jpg" alt="Рис для суши" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Рис для суши и заправка</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🍚 Рис круглый - 2 стакана</li>
-                                <li>💧 Вода - 500мл</li>
-                                <li>🍶 Яблочный уксус - 2 ст.л.</li>
-                                <li>🍬 Сахар - 1 ч.л., 🧂 Соль - 0,5 ч.л.</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Рис промываем. Хорошо сливаем воду, высыпаем рис в сотейник или кастрюлю. Заливаем холодной
-                        водой. Накрываем крышкой и ставим на средний огонь пока не закипит. Крышку вообще не открывать!
-                        Когда закипит, делаем огонь минимальным и варим 15-20 мин. Воды не должно остаться.
-                        Выключаем огонь, не открываем крышку, накрываем кастрюлю полотенцем (что б впиталась лишняя
-                        влага) и даем постоять еще 15 мин.
-                        Готовим заправку. Смешать все ингредиенты для соуса и подогреть на огне что бы растворились соль
-                        и сахар.
-                        Выливаем заправку в рис, перемешиваем силиконовой лопаткой.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card" id="kulichi">
-                     <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/kulichi.jpg" alt="Куличи" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Пасхальные куличи</h2>
-                        <div class="recipe-card__ingredients">
-                             <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🌾 Мука - 1 кг</li>
-                                <li>🍞 Сухие дрожжи - 11г (или 30-50г живых)</li>
-                                <li>🥚 Белки - 6 шт.</li>
-                                <li>🥚 Желтки - 10 шт.</li>
-                                <li>🍬 Сахар - 400г</li>
-                                <li>🌼 Ванильный сахар</li>
-                                <li>🧈 Сливочное масло - 200г</li>
-                                <li>🍇 Изюм (или другие сухофрукты)</li>
-                                <li>🍒 Клюква (или другие сухофрукты)</li>
-                                <li>🍋 Цедра лимона или апельсина</li>
-                                <li>🥛 Молоко - 1.5 стакана (350мл)</li>
-                                <li>🥣 Сметана (любой жирности) - 2-3 ст.л.</li>
-                                <li>🧁 Для глазури - 200г Сахарной пудры и 1 белок, лимонный сок</li>
-                            </ul>
-                        </div>
-                         <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Для опары лучше использовать глубокую миску. Теплое молоко (не горячее) смешиваем с (живыми или сухими дрожжами) сахаром 1 ст.л. перемешиваем и добавляем 3-4 ложки с горкой муки. Перемешиваем и оставляем в тепле на 20 мин.</p>
-                            <p>Разделяем желтки от белков. Белки взбиваем миксером с сахаром 200г до густой, устойчивой пены. Желтки взбиваем с оставшимся сахаром до бела.
-                            Когда опара подошла, смешиваем ее с желтками. В миску побольше высыпаем часть муки, выливаем опару с желтками, перемешиваем (лучше это делать руками).
-                            Добавляем белки и вымешиваем дальше. (Тесто будет липнуть к рукам, это нормально).
-                            Накрываем полотенцем и ставим в теплое место на 2 часа (оно должно увеличится в 2-3 раза).</p>
-                            <p>Достаем тесто.
-                            Добавляем растопленное сливочное масло, сметану, цедру лимона или апельсина. Перемешиваем. Добавляем оставшуюся муку. Вымешиваем тесто минут 15-20. Снова ставим в теплое место подходить (оно должно вырасти в 3 раза).
-                            Достаем, добавляем цукаты и раскладываем по формам. Тесто должно занимать не больше половины формы. Даем ему еще раз подняться в формочках.
-                            Выпекаем при 160 градусах примерно час. Готовность проверяем деревянной шпажкой.
-                            Покрываем глазурью теплые куличи (Не горячие).</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card" id="lazaniya">
-                     <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/lazaniya.jpg" alt="Лазанья" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Классическая Лазанья</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🥩 Мясо (фарш) - 400г</li>
-                                <li>🍝 Листы лазаньи
-                                <li>🧀 Сыр пармезан (или любой твердый)
-                                <li>🥕 Морковь - 1 шт.
-                                <li>🧅 Лук - 1 шт.
-                                <li>🧄 Чеснок - 2-3 зубчика.
-                                <li>🌻 Оливковое или подсолнечное масло</li>
-                                <li>🍅 Томатная паста - 2-3 ст.л. (или протертые помидоры)</li>
-                                <li>🌿 Специи: соль, перец, итальянские травы (или базилик, орегано)</li>
-                            </ul>
-                             <h4>Соус Бешамель:</h4>
-                            <ul>
-                                <li>🥛 Молоко - 700-900мл</li>
-                                <li>🌾 Мука - 80-100г</li>
-                                <li>🧈 Сливочное масло - 80-100г</li>
-                                <li>🌰 Мускатный орех (по желанию)</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>У нас будет 2 соуса.
-                            Болоньезе:
-                            Обжариваем лук и чеснок до золотистого цвета на оливковом масле. Добавляем морковь (на мелкую терку). Спустя 2-3 мин добавляем Фарш. Обжариваем 5-7 минут, и добавляем томатную пасту (или протертые помидоры без шкурки). Перемешиваем, добавляем соль, перец, специи, можно добавить немного воды. Тушим под крышкой на небольшом огне минут 15-20. Соус должен быть густым.</p>
-                            <p>Бешамель:
-                            В сотейнике с толстым дном растапливаем сливочное масло, добавляем муку и быстро перемешиваем, немного обжариваем. Тонкой струйкой вливаем молоко и постоянно помешиваем венчиком, что бы не было комков. Добавляем соль, мускатный орех.
-                            На медленном огне, постоянно(!) помешивая, доводим соус до консистенции сметаны. (Он не должен быть очень густым, когда он остынет он станет еще гуще).</p>
-                            <p>Сборка:
-                            Форму для выпечки смазать сливочным маслом. Выкладываем листы лазаньи. Сверху соус болоньезе, посыпаем сыром и смазываем соусом бешамель. Опять листы, болоньезе, сыр, бешамель. И так пока не закончится место в форме.  (У меня получается 3 слоя)
-                            Последний слой листов обильно смазываем соусом бешамель и посыпаем сыром.
-                            Отправляем в духовку на 20-30 минут при 180 градусах.</p>
-                        </div>
-                    </div>
-                </article>
-                
-                 <article class="recipe-card" id="kabachkovie_oladiki">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/kabachkovie_oladiki.JPG" alt="Кабачковые оладьи" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Кабачковые оладьи</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🥒 Кабачки - 1 кг (3-4 шт.)</li>
-                                <li>🥚 Яйца - 2шт.</li>
-                                <li>🌿 Зеленый лук</li>
-                                <li>🌿 Укроп</li>
-                                <li>🧄 Чеснок</li>
-                                <li>🌾 Мука - 1 стакан</li>
-                            </ul>
-                         </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Трем кабачки на крупной терке. Добавляем соль, перемешиваем и оставляем на 15-20 минут, что бы кабачки пустили сок. Хорошо отжимаем кабачки от сока.
-Добавляем мелко нарезанную зелень, пропущенный через пресс чеснок и яйца. Перчим, солим.
-Добавляем муку и перемешиваем. (Муку добавляйте постепенно, если кабачки водянистые, может понадобиться больше муки).
-Разогреваем сковороду с маслом. Столовой ложкой выкладываем тесто и жарим на среднем огне до золотистой корочки с двух сторон.
-Подаем со сметаной.</p>
-                        </div>
-                     </div>
-                </article>
-
-                <article class="recipe-card" id="okroshka">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/okroshka.JPG" alt="Окрошка" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Окрошка с курицей</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🍗 Куриное филе</li>
-                                <li>🥔 Картофель</li>
-                                <li>🥒 Огурцы</li>
-                                <li>🥗 Редис</li>
-                                <li>🥚 Яйца</li>
-                                <li>🌿 Зелень (лук, укроп, петрушка)</li>
-                                <li>🥣 Майонез</li>
-                                <li>🥣 Сметана</li>
-                                <li>🥤 Сыворотка</li>
-                                <li>🌭 Горчица (по желанию)</li>
-                            </ul>
-                        </div>
-                         <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Окрошка с курицей на сыворотке - мое любимое летнее блюдо.
-Куриное филе, картофель и яйца отварить до готовности.
-Все ингредиенты нарезаем небольшими кубиками (редис можно на терочку).
-Заправляем майонезом и сметаной в равных пропорциях. Добавляем соль, горчицу и перемешиваем. Заливаем холодной сывороткой.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card" id="biscuit">
-                     <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/biscuit.JPG" alt="Бисквит" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Шифоновый шоколадный бисквит</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🌾 Мука - 200гр</li>
-                                <li>🍬 Сахар - 205гр</li>
-                                <li>🥚 Яйца - 6шт</li>
-                                <li>🍫 Какао - 60гр</li>
-                                <li>🌻 Растительное масло - 125мл</li>
-                                <li>💧 Вода - 165мл</li>
-                                <li>🧁 Разрыхлитель - 10гр</li>
-                            </ul>
-                         </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>В маленькой кастрюле соедините какао и воду. Поставьте на огонь и доведите до однородности. Остудите до комнатной температуры.
-Желтки (6шт) взбейте со 160гр сахара до пышной светлой массы.
-Добавьте к желткам растительное масло и остывшую пасту из какао. Перемешайте.
-Всыпьте просеянную муку с разрыхлителем. Перемешайте.
-Взбейте белки (6шт) с оставшимся сахаром (45гр) до крепких пиков.
-Аккуратно вмешайте белки в шоколадную массу лопаткой складывающими движениями снизу вверх, стараясь максимально сохранить воздушность.
-Дно формы застелить пергаментом, бока ничем не смазываем. Переливаем тесто в форму.
-Выпекаем в разогретой до 160 градусов духовке 50-60 минут.
-Я выпекала в мультиварке на режиме «Выпечка» 80 минут.
-Готовый бисквит остужаем в форме в перевернутом виде на решетке.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card" id="pizza">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/pizza2.HEIC" alt="Пицца" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Тесто для пиццы</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🌾 Мука - 350г</li>
-                                <li>💧 Вода - 250мл</li>
-                                <li>🍞 Свежие дрожжи - 10-15г (или 1 ч.л. сухих)</li>
-                                <li>🌻 Оливковое масло - 1 ст.л.</li>
-                                <li>🧂 Соль - 1 ч.л.</li>
-                                <li>🍬 Сахар - 1ч.л.</li>
-                            </ul>
-                         </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>В теплой воде растворить сахар и дрожжи. Оставить на 10 мин. (Если дрожжи сухие, просто смешать с мукой). Просеять муку, добавить соль. Влить дрожжевую воду и масло. Замесить тесто. Вымешивать 5-7 минут пока не станет гладким. Смазать миску маслом, положить тесто, накрыть и убрать в теплое место на 45 мин. Тесто раскатываем (или растягиваем руками) выкладываем начинку. Выпекаем при максимальной температуре (200-240) градусов 10-15 мин.</p>
-                        </div>
-                    </div>
-                </article>
-
-                 <article class="recipe-card" id="blinchiki">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/blinchiki.jpg" alt="Блинчики" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Блинчики на кукурузной муке</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🌽 Кукурузная мука - 7 ст.л. с горкой</li>
-                                <li>🍬 Сахар - 2-3 ст.л.</li>
-                                <li>🥚 Яйца - 2шт.</li>
-                                <li>🥛 Молоко - 300мл</li>
-                                <li>🌻 Растительное масло - 2-3 ст.л.</li>
-                                <li>🧂 Щепотка соли</li>
-                            </ul>
-                        </div>
-                         <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                             <p>Яйца взбить с сахаром и солью. Добавить молоко, перемешать. Всыпать кукурузную муку. Перемешать венчиком. Добавить растительное масло. Оставить тесто постоять минут 20, чтобы мука набухла. Печь блины на разогретой сковороде с двух сторон. (Тесто нужно постоянно перемешивать, так как кукурузная мука оседает на дно).</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card" id="kurochka_teriyaki">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/kurochka_teriyaki.jpg" alt="Курочка" loading="lazy">
-                    </div>
-                     <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Курочка Терияки</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🍗 Куринное филе - 2 шт.</li>
-                                <li>🌰 Кунжут - 1/2 стакана</li>
-                                <li>🍯 Мед - 3 ст ложки</li>
-                                <li>🧄 Чеснок - 4 зубчика (по вкусу)</li>
-                                <li>🥢 Соевые соус - 1/2 стакана</li>
-                                <li>🫚 Имбирь - свежий или сухой по вкусу, если сухой примерно пол чайной ложки</li>
-                                <li>🌻 Растительное масло - для жарки</li>
-                            </ul>
-                        </div>
-                         <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                             <p>Куринное филе нарежьте на небольшие кусочки, желательно продолговатой формы. Залейте соевым соусом, соус не должен полностью покрывать мясо. Добавьте мед, имбирь тертые или сухой, чеснок. Перемешайте и поставьте в холодильник на пол часа. Пока курица маринуется, подготовим кунжут. Сырой кунжут обжариваем на сухой сковороде без масла до золотистого цвета и пересыпаем в миску. Достаем курицу и обжариваем на растительном масле до готовности. Выключаем огонь и добавляем кунжут. Курочка Терияки готова!</p>
-                        </div>
-                    </div>
-                </article>
-
-                 <article class="recipe-card" id="mayonez">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/mayonez.jpg" alt="Майонез" loading="lazy">
-                    </div>
-                     <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Домашний майонез</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                             <ul>
-                                <li>🥚 Яйцо - 1шт</li>
-                                <li>🌭 Горчица (в зернах или обычная) - 1.ч.л.</li>
-                                <li>🍋 Лимонный сок - 1.ч.л.</li>
-                                 <li>🍬 Сахар - 1.ч.л.</li>
-                                <li>🧂 Соль - 0.5 ч.l.</li>
-                                <li>🌻 Растительное масло - 200мл</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>В чашу блендера разбиваем яйцо (важно не повредить желток), добавляем соль, сахар, горчицу, лимонный сок. Вливаем растительное масло. Опускаем погружной блендер так, чтобы он ПОЛНОСТЬЮ накрыл желток. Взбиваем на максимальной скорости не поднимая блендер, пока не пойдет густая белая масса (секунд 20-30). Затем потихоньку начинаем поднимать и опускать блендер, взбивая все масло.</p>
-                        </div>
-                    </div>
-                </article>
-                
-                 <article class="recipe-card" id="salat_morkov">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/salat_morkov.jpg" alt="Салат с морковкой" loading="lazy">
-                     </div>
-                     <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Салат с морковкой по-корейски</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                              <ul>
-                                <li>🥚 Яйца - 3шт.</li>
-                                <li>🥕 Морковь по-корейски - 200г</li>
-                                <li>🍗 Куриное филе - 1 шт.</li>
-                                <li>🍄 Грибы маринованные - 150г (можно свежие шампиньоны обжарить)</li>
-                                 <li>🌽 Кукуруза - пол банки</li>
-                                <li>🥣 Майонез</li>
-                            </ul>
-                         </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                             <p>Куриное филе отварить (или обжарить кусочками со специями). Грибы если крупные - порезать. Яйца отварить и нарезать кубиком. Смешать все ингредиенты (курица, морковь, грибы, яйца, кукуруза). Заправить майонезом. (Можно выкладывать слоями).</p>
-                        </div>
-                     </div>
-                </article>
-
-                  <article class="recipe-card" id="salad_ananas">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/salad_ananas.jpg" alt="Салат с ананасом" loading="lazy">
-                    </div>
-                     <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Салат с курицей и ананасом</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                              <ul>
-                                <li>🍗 Куриное филе - 1 шт. (300-400г)</li>
-                                <li>🥚 Яйца - 3шт.</li>
-                                <li>🍄 Грибы маринованные - 1 банка (300г)</li>
-                                <li>🍍 Ананасы консервированные - 1 банка (300-400г)</li>
-                                 <li>🥬 Салат Айсберг - 1 шт. (хотя бы грамм 200)</li>
-                                <li>🥣 Майонез - по вкусу</li>
-                            </ul>
-                         </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Куриное филе нарезаем небольшими кусочками, солим, перчим (я добавляю паприку и сухой чеснок) и обжариваем на сковороде до золотистого цвета. Остужаем.
-Грибы, яйца, ананас (если кольцами) нарезаем кубиками. Салат Айсберг рвем руками или крупно нарезаем.
-Смешиваем все ингредиенты и заправляем майонезом. Солить салат не нужно, так как майонез и курица уже соленые.</p>
-                        </div>
-                    </div>
-                </article>
-                                <article class="recipe-card" id="tikvenij_pirog">
-                    <div class="recipe-card__image-wrapper">
-                         <img class="recipe-card__image" src="img/tikvenij_pirog.jpg" alt="Тыквенный пирог" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Тыквенный пирог</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <div class="ingredients-group">
-                                <h4>Тесто:</h4>
-                                <ul>
-                                    <li>🌾 Мука - 200г</li>
-                                    <li>🧈 Холодное сливочное масло - 100г</li>
-                                    <li>💧 Ледяная вода - 4-5 ст.л.</li>
-                                     <li>🧂 Щепотка соли</li>
-                                </ul>
-                            </div>
-                            <div class="ingredients-group">
-                                <h4>Начинка:</h4>
-                                <ul>
-                                    <li>🎃 Тыква - 500г (в очищенном виде)</li>
-                                    <li>🥚 Яйца - 2шт.</li>
-                                     <li>🥛 Сливки (33%) - 150мл (можно сметану)</li>
-                                    <li>🍬 Сахар - 130г</li>
-                                    <li>🤎 Специи: Корица, имбирь, мускатный орех - по 0,5 ч.л.</li>
-                                </ul>
-                            </div>
-                         </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                             <p>Тесто: Муку перетереть с холодным маслом в крошку. Добавить соль и ледяную воду. Быстро замесить тесто, завернуть в пленку и убрать в холодильник на 30 мин.
-Начинка: Тыкву нарезать кубиками и отварить до мягкости (минут 15). Воду слить, тыкву пюрировать блендером. Добавить сахар, яйца, сливки, специи и еще раз взбить блендером до однородности.
-Тесто распределить по форме (диаметр 20-22см), сделав бортики. Наколоть вилкой. Выпекать 'корзинку' 10 мин при 180 градусах (можно с грузом).
-Вылить начинку в основу. Выпекать 50-60 минут при 170-180 градусах. Начинка должна схватиться, но серединка может немного дрожать. Остудить пирог в форме (начинка стабилизируется).</p>
-                        </div>
-                    </div>
-                </article>
-
-               <article class="recipe-card" id="morkovnij_pirog">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/morkovnij_pirog.jpg" alt="Морковный пирог" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Морковный пирог</h2>
-                        <div class="recipe-card__ingredients">
-                             <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🌾 Мука - 160г</li>
-                                <li>🌻 Растительное масло - 120мл</li>
-                                <li>🥚 Яйца - 2шт.</li>
-                                <li>🥕 Морковь - 2шт. (250г)</li>
-                                <li>🍬 Сахар - 150г (можно 100г, если морковь сладкая)</li>
-                                <li>🧁 Разрыхлитель - 1 ч.л.</li>
-                                <li>🌰 Грецкие орехи, цедра апельсина, корица (по вкусу)</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                             <p>Морковь натереть на мелкой терке.
-Яйца взбить с сахаром. Влить масло. Добавить морковь и хорошо перемешать.
-Всыпать муку с разрыхлителем и корицей (если любите). Добавить измельченные орехи.
-Тесто вылить в форму. Выпекать 40-50 минут при 180 градусах. Готовность проверять деревянной палочкой.</p>
-                        </div>
-                    </div>
-                </article>
-
-                 <article class="recipe-card" id="tvorozhnoe_pechenje">
-                    <div class="recipe-card__image-wrapper">
-                         <img class="recipe-card__image" src="img/tvorozhnoe_pechenje.jpg" alt="Творожное печенье" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Творожное печенье</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                              <ul>
-                                <li>🌾 Мука - 250г (может уйти чуть больше или меньше)</li>
-                                <li>🧈 Сливочное масло - 110г (холодное)</li>
-                                <li>🧀 Творог - 200г (лучше сухой, в брикете)</li>
-                                <li>🧁 Разрыхлитель - 1 ч.л.</li>
-                                <li>🍬 Сахар (для обсыпки)</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>В муку добавить разрыхлитель и натереть холодное сливочное масло. Перетереть в крошку. Добавить творог и замесить мягкое, не липнущее к рукам тесто. Убрать в холодильник на 30 мин.
-Раскатать тесто не очень тонко (3-4мм). Вырезать кружочки стаканом.
-Обмакнуть кружочек одной стороной в сахар, свернуть пополам (сахаром внутрь). Опять обмакнуть, и снова свернуть (получится треугольник). Верхнюю сторону тоже обмакнуть в сахар.
-Выложить на противень. Выпекать при 180 градусах около 20-25 минут до золотистого цвета.</p>
-                        </div>
-                    </div>
-                </article>
-
-                 <article class="recipe-card" id="griby_sir">
-                    <div class="recipe-card__image-wrapper">
-                         <img class="recipe-card__image" src="img/griby_sir.jpg" alt="Грибы" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                         <h2 class="recipe-card__title">Шампиньоны с сыром</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🍄 Шампиньоны (крупные) - 10-12 шт.</li>
-                                <li>🧀 Сыр твердый - 100г</li>
-                                <li>🧄 Чеснок - 2 зубчика</li>
-                                <li>🥣 Майонез - 1-2 ст.л.</li>
-                                <li>🌿 Зелень (укроп)</li>
-                                <li>🧂 Соль, перец</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                             <p>У шампиньонов аккуратно выкрутить ножки (их можно использовать в другом блюде или порезать и добавить в начинку, но я обычно не добавляю). Шляпки внутри немного посолить.
-Сыр натереть на мелкой терке, добавить майонез, измельченный чеснок и зелень. Перемешать.
-Нафаршировать шляпки этой смесью. Выложить в форму для запекания.
-Запекать при 200 градусах 20-30 минут до румяной корочки.</p>
-                        </div>
-                    </div>
-                </article>
-
-                  <article class="recipe-card" id="semga_shpinat">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/semga_shpinat.jpg" alt="Семга" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Семга в сливочном соусе</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                              <ul>
-                                <li>🐟 Стейки семги (или любой красной рыбы)</li>
-                                <li>🥛 Сливки (20-33%) - 200мл</li>
-                                <li>🌿 Шпинат (свежий или замороженный) - пучок</li>
-                                <li>🧄 Чеснок - 1-2 зубчика</li>
-                                <li>🧀 Сыр Пармезан (по желанию)</li>
-                                <li>🧂 Соль, перец, лимон</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                             <p>Семгу посолить, поперчить и сбрызнуть лимоном. Обжарить на сковороде по 2-3 минуты с каждой стороны (до полуготовности) и выложить на тарелку.
-В этой же сковороде обжарить измельченный чеснок (буквально минуту). Добавить шпинат (если свежий - порезанный, если замороженный - как есть). Тушить пару минут пока шпинат не станет мягким.
-Влить сливки. Посолить, поперчить. Довести до кипения.
-Выложить рыбу обратно в сковороду в соус. Тушить под крышкой 5-10 минут на медленном огне. (Можно посыпать пармезаном в конце).</p>
-                        </div>
-                    </div>
-                </article>
-                
-                 <article class="recipe-card" id="abrikos_tart">
-                    <div class="recipe-card__image-wrapper">
-                         <img class="recipe-card__image" src="img/abrikos_tart.jpg" alt="Тарт" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Абрикосовый тарт</h2>
-                         <div class="recipe-card__ingredients">
-                              <h3>Ингредиенты</h3>
-                             <div class="ingredients-group">
-                                <h4>Тесто:</h4>
-                                <ul>
-                                    <li>🌾 Мука - 200г</li>
-                                    <li>🧈 Холодное сливочное масло - 100г</li>
-                                    <li>🍬 Сахар - 1 ст.л.</li>
-                                    <li>🥚 Желток - 1 шт.</li>
-                                    <li>❄️ Холодная вода - 1-2 ст.л.</li>
-                                </ul>
-                            </div>
-                            <div class="ingredients-group">
-                                <h4>Заливка:</h4>
-                                <ul>
-                                    <li>🥛 Сливки (33%) - 250мл</li>
-                                    <li>🍬 Сахар - 80-100г (по вкусу)</li>
-                                    <li>🥚 Яйца - 2шт.</li>
-                                    <li>🌽 Крахмал (любой) - 1.ст.л.</li>
-                                    <li>🌼 Ванилин</li>
-                                </ul>
-                            </div>
-                            <p>🍑 Абрикосы (свежие или консервированные) - 300г</p>
-                         </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Замесить песочное тесто (как на тыквенный пирог: крошка + желток + вода). Убрать в холод.
-Распределить тесто по форме, сделав бортики.
-На тесто выложить половинки абрикосов (срезом вверх).
-Смешать все ингредиенты для заливки венчиком до однородности. Залить этой смесью абрикосы.
-Выпекать при 180 градусах 40-50 минут. Начинка должна загустеть.
-Обязательно полностью остудить перед нарезкой.</p>
-                        </div>
-                    </div>
-                </article>
-
-                 <article class="recipe-card" id="wafles">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/wafles.jpg" alt="Вафли" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Бельгийские вафли</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                              <ul>
-                                  <li>🌾 Мука - 200г</li>
-                                  <li>🍬 Сахар - 60г</li>
-                                  <li>🧈 Сливочное масло - 80г (растопленное)</li>
-                                  <li>🥛 Молоко - 150мл</li>
-                                  <li>🥚 Яйца - 2шт.</li>
-                                  <li>🧁 Разрыхлитель - 1 ч.л.</li>
-                                  <li>🌼 Ванилин, соль</li>
-                              </ul>
-                          </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Яйца разделить на белки и желтки.
-Желтки взбить с сахаром. Влить растопленное масло и молоко. Перемешать.
-Всыпать муку с разрыхлителем. Перемешать.
-Белки взбить с щепоткой соли до устойчивых пиков.
-Аккуратно вмешать белки в тесто лопаткой.
-Выпекать в вафельнице до золотистого цвета (у меня уходит 4-5 минут на партию).</p>
-                        </div>
-                    </div>
-                </article>
-
-                  <article class="recipe-card" id="salat_krevetki">
-                    <div class="recipe-card__image-wrapper">
-                         <img class="recipe-card__image" src="img/salat_krevetki.jpg" alt="Салат" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Салат с креветками и пикантным ананасом</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🦐 Креветки - 200-300г</li>
-                                <li>🍍 Ананас (свежий или консервированный) - 150г</li>
-                                <li>🥑 Авокадо - 1 шт.</li>
-                                <li>🌿 Руккола - 70г</li>
-                                <li>🧀 Сыр Творожный (Крем-чиз) - 100г</li>
-                                <li>🌶️ Соус Сладкий Чили - 2-3 ст.л.</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Авокадо очистить и нарезать кубиками (можно сбрызнуть лимоном, чтобы не потемнел).
-Ананас также нарезать небольшими кусочками.
-Креветки очистить. Разогреть сковороду (можно добавить каплю масла), выложить креветки и ананас. Добавить соус Сладкий Чили. Прогреть всё вместе, помешивая, 1-2 минуты, чтобы ингредиенты объединились вкусами и стали теплыми.
-Собираем салат: на тарелку выложить рукколу. Сверху выложить авокадо и теплые креветки с ананасом (вместе с соусом).
-С помощью двух чайных ложек сформировать небольшие кнели из творожного сыра и хаотично выложить на салат.
-Сразу подавать!</p>
-                        </div>
-                    </div>
-                </article>
-
-                  <article class="recipe-card" id="tikvennie_pankeiki">
-                    <div class="recipe-card__image-wrapper">
-                         <img class="recipe-card__image" src="img/tikvennie_pankeiki.JPG" alt="Панкейки" loading="lazy">
-                    </div>
-                    <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Тыквенные панкейки</h2>
-                         <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                            <ul>
-                                <li>🎃 Тыквенное пюре - 200г</li>
-                                <li>🥚 Яйца - 2шт.</li>
-                                <li>🍬 Сахар - 3-4 ст.л.</li>
-                                <li>🥛 Молоко - 200мл</li>
-                                <li>🌾 Мука - 200-250г (смотрите по консистенции)</li>
-                                <li>🧁 Разрыхлитель - 1 ч.л.</li>
-                                <li>🤎 Корица, ваниль</li>
-                                <li>🌻 Растительное масло - 2 ст.л. в тесто</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                            <p>Яйца взбить с сахаром и специями. Добавить тыквенное пюре и кефир. Перемешать.
-Всыпать муку с разрыхлителем. Тесто должно быть как густая сметана (гуще чем на оладьи).
-Влить масло и перемешать.
-Жарить на сухой(!) сковороде на небольшом огне под крышкой с двух сторон.
-Они получаются очень нежные и ароматные.</p>
-                        </div>
-                    </div>
-                </article>
-
-                  <article class="recipe-card" id="rice_krevetki">
-                    <div class="recipe-card__image-wrapper">
-                        <img class="recipe-card__image" src="img/rice_krevetki.JPG" alt="Рис" loading="lazy">
-                    </div>
-                     <div class="recipe-card__content">
-                        <h2 class="recipe-card__title">Рис с креветками в сливочном соусе</h2>
-                        <div class="recipe-card__ingredients">
-                            <h3>Ингредиенты</h3>
-                             <ul>
-                                <li>🍚 Рис (длиннозернистый или басмати)</li>
-                                <li>🦐 Креветки - 300г</li>
-                                <li>🧅 Лук - 1 шт.</li>
-                                <li>🥛 Сливки (20%) - 200мл</li>
-                                <li>🧄 Чеснок - 1-2 зубчика</li>
-                                <li>🥢 Соевый соус - 2 ст.л.</li>
-                                <li>🌿 Зеленый лук</li>
-                            </ul>
-                        </div>
-                        <div class="recipe-card__instructions">
-                            <h3>Приготовление</h3>
-                             <p>Рис отварить до готовности.
-На сковороде обжарить мелко нарезанный лук и чеснок до золотистости.
-Добавить очищенные креветки, жарить 2-3 минуты.
-Влить соевый соус и сливки. Прогреть пару минут до загустения соуса.
-Всыпать рис в сковороду к соусу, перемешать и прогреть все вместе 1 минуту.
-Посыпать зеленым луком при подаче.
-Это очень быстрое и вкусное блюдо, как в ресторане!</p>
-                        </div>
-                     </div>
-                </article>
-
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Взбиваем отдельно белки в густую пену (миксером или венчиком)
+                  с сахаром. Добавляем желтки и кокосовую стружку. Перемешиваем
+                  ложкой. Лепим шарики размером с грецкий орех. Выкладываем на
+                  пергаментную бумагу. Ставим в духовку на 180 градусов на 15
+                  мин в обычном режиме. Далее если есть включаем режим с
+                  конвекцией и ждем пока зарумянится, по цвету чуть светлее чем
+                  на фото. Достаем, остужаем, кушаем.
+                </p>
+              </div>
             </div>
-        </main>
+          </article>
+
+          <article class="recipe-card" id="chocolate">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/brauni.jpg"
+                alt="Печенье брауни"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Печенье шоколадное брауни</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🌾 Пшеничная мука - 1 стакан</li>
+                  <li>🍫 Какао-порошок - 1/2 стакана</li>
+                  <li>🍬 Сахар - 1/2 стакана</li>
+                  <li>🧈 Сливочное масло - 60г</li>
+                  <li>🥚 Яйца - 2шт.</li>
+                  <li>🧁 Разрыхлитель - 1 ч.л.</li>
+                  <li>🍬 Сахарная пудра - 1/4 стакана</li>
+                  <li>🌼 Ванилин - 1/2 ч.л</li>
+                  <li>🧂 Соль - 1/4 ч.л</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Смешать муку, какао, разрыхлитель, соль и ванилин.
+                  Размягченное сливочное масло взбить с сахаром. Добавить яйца и
+                  снова взбить. Постепенно всыпать сухую смесь. Перемешать.
+                  Накрыть тесто пленкой и убрать в холодильник на 2–4 часа.
+                  Разогреть духовку до 180 °С. Застелить противень бумагой для
+                  выпечки. Сформировать из теста шарики. Густо обвалять их в
+                  сахарной пудре. Выложить на противень. Выпекать 10–15 мин.
+                  Печенье должно слегка затвердеть с краев, но остаться мягком в
+                  центре. Важно не передержать!
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="oladiki">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/oladiki.jpg"
+                alt="Банановые оладьи"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Банановые оладьи ПП</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🍌 Банан - 3шт</li>
+                  <li>🥚 Яйцо - 1шт.</li>
+                  <li>🌿 Стевия (или сахар) - 1ст.л.</li>
+                  <li>🥛 Молоко - 250 мл(стакан)</li>
+                  <li>🌽 Кукурзная мука (можно обычную) - 250 г</li>
+                  <li>🧁 Разрыхлитель - 2 ч.л.</li>
+                  <li>🌻 Растительное масло - 2ст.л.</li>
+                  <li>🧂 Соль - щепотка</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Венчиком взбить яйцо, молоко, масло, сахарозаменитель и соль.
+                  Смешать муку с разрыхлителем. Просеять к жидким ингредиентам и
+                  перемешать. Бананы покрошить кубиками (не очень маленькими).
+                  Добавить их в тесто и перемешать. Жарить на небольшом
+                  количестве растительного, кокос или сливочного масла с двух
+                  сторон до золотистого цвета.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="nut">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/kotlety-nut.jpg"
+                alt="Нутовые котлетки"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Нутовые котлетки</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🌰 Нут - 500г</li>
+                  <li>🥤 Сода - 1ч.л.</li>
+                  <li>🥚 Яйцо - 2шт.</li>
+                  <li>🥕 Морковь - 2шт</li>
+                  <li>🧅 Лук - 2шт</li>
+                  <li>🌽 Кукурузная мука (для панировки)</li>
+                  <li>🌻 Масло для жарки, сухой чеснок, специи, соль</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Нут заливаем холодной водой, добавляем ложку соды, размешиваем
+                  и оставляем на ночь. Утром, воду сливаем, нут промываем.
+                  Заливаем чисто водой и варим до полной готовности (он должен
+                  развариться). Готовый нут откидываем на дуршлаг, даем стечь
+                  воду. Пропускаем нут через мясорубку. Следом за ним через
+                  мясорубку пропускаем лук, морковь. В эту массу добавляем яйца,
+                  соль, сухой чеснок и специи. Хорошо вымешивает. Лепим котлеты,
+                  обваливаем в кукурузной муке. Жарим на разогретой сковороде с
+                  маслом до румяной корочки. Подавать со сметанкой. Идеально
+                  подходят как гарнир.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="sushi">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/rice-sushi.jpg"
+                alt="Рис для суши"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Рис для суши и заправка</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🍚 Рис круглый - 2 стакана</li>
+                  <li>💧 Вода - 500мл</li>
+                  <li>🍶 Яблочный уксус - 2 ст.л.</li>
+                  <li>🍬 Сахар - 1 ч.л., 🧂 Соль - 0,5 ч.л.</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Рис промываем. Хорошо сливаем воду, высыпаем рис в сотейник
+                  или кастрюлю. Заливаем холодной водой. Накрываем крышкой и
+                  ставим на средний огонь пока не закипит. Крышку вообще не
+                  открывать! Когда закипит, делаем огонь минимальным и варим
+                  15-20 мин. Воды не должно остаться. Выключаем огонь, не
+                  открываем крышку, накрываем кастрюлю полотенцем (что б
+                  впиталась лишняя влага) и даем постоять еще 15 мин. Готовим
+                  заправку. Смешать все ингредиенты для соуса и подогреть на
+                  огне что бы растворились соль и сахар. Выливаем заправку в
+                  рис, перемешиваем силиконовой лопаткой.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="kulichi">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/kulichi.jpg"
+                alt="Куличи"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Пасхальные куличи</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🌾 Мука - 1 кг</li>
+                  <li>🍞 Сухие дрожжи - 11г (или 30-50г живых)</li>
+                  <li>🥚 Белки - 6 шт.</li>
+                  <li>🥚 Желтки - 10 шт.</li>
+                  <li>🍬 Сахар - 400г</li>
+                  <li>🌼 Ванильный сахар</li>
+                  <li>🧈 Сливочное масло - 200г</li>
+                  <li>🍇 Изюм (или другие сухофрукты)</li>
+                  <li>🍒 Клюква (или другие сухофрукты)</li>
+                  <li>🍋 Цедра лимона или апельсина</li>
+                  <li>🥛 Молоко - 1.5 стакана (350мл)</li>
+                  <li>🥣 Сметана (любой жирности) - 2-3 ст.л.</li>
+                  <li>
+                    🧁 Для глазури - 200г Сахарной пудры и 1 белок, лимонный сок
+                  </li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Для опары лучше использовать глубокую миску. Теплое молоко (не
+                  горячее) смешиваем с (живыми или сухими дрожжами) сахаром 1
+                  ст.л. перемешиваем и добавляем 3-4 ложки с горкой муки.
+                  Перемешиваем и оставляем в тепле на 20 мин.
+                </p>
+                <p>
+                  Разделяем желтки от белков. Белки взбиваем миксером с сахаром
+                  200г до густой, устойчивой пены. Желтки взбиваем с оставшимся
+                  сахаром до бела. Когда опара подошла, смешиваем ее с желтками.
+                  В миску побольше высыпаем часть муки, выливаем опару с
+                  желтками, перемешиваем (лучше это делать руками). Добавляем
+                  белки и вымешиваем дальше. (Тесто будет липнуть к рукам, это
+                  нормально). Накрываем полотенцем и ставим в теплое место на 2
+                  часа (оно должно увеличится в 2-3 раза).
+                </p>
+                <p>
+                  Достаем тесто. Добавляем растопленное сливочное масло,
+                  сметану, цедру лимона или апельсина. Перемешиваем. Добавляем
+                  оставшуюся муку. Вымешиваем тесто минут 15-20. Снова ставим в
+                  теплое место подходить (оно должно вырасти в 3 раза). Достаем,
+                  добавляем цукаты и раскладываем по формам. Тесто должно
+                  занимать не больше половины формы. Даем ему еще раз подняться
+                  в формочках. Выпекаем при 160 градусах примерно час.
+                  Готовность проверяем деревянной шпажкой. Покрываем глазурью
+                  теплые куличи (Не горячие).
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="lazaniya">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/lazaniya.jpg"
+                alt="Лазанья"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Классическая Лазанья</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🥩 Мясо (фарш) - 400г</li>
+                  <li>🍝 Листы лазаньи</li>
+                  <li>🧀 Сыр пармезан (или любой твердый)</li>
+                  <li>🥕 Морковь - 1 шт.</li>
+                  <li>🧅 Лук - 1 шт.</li>
+                  <li>🧄 Чеснок - 2-3 зубчика.</li>
+                  <li>🌻 Оливковое или подсолнечное масло</li>
+                  <li>
+                    🍅 Томатная паста - 2-3 ст.л. (или протертые помидоры)
+                  </li>
+                  <li>
+                    🌿 Специи: соль, перец, итальянские травы (или базилик,
+                    орегано)
+                  </li>
+                </ul>
+                <h4>Соус Бешамель:</h4>
+                <ul>
+                  <li>🥛 Молоко - 700-900мл</li>
+                  <li>🌾 Мука - 80-100г</li>
+                  <li>🧈 Сливочное масло - 80-100г</li>
+                  <li>🌰 Мускатный орех (по желанию)</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  У нас будет 2 соуса. Болоньезе: Обжариваем лук и чеснок до
+                  золотистого цвета на оливковом масле. Добавляем морковь (на
+                  мелкую терку). Спустя 2-3 мин добавляем Фарш. Обжариваем 5-7
+                  минут, и добавляем томатную пасту (или протертые помидоры без
+                  шкурки). Перемешиваем, добавляем соль, перец, специи, можно
+                  добавить немного воды. Тушим под крышкой на небольшом огне
+                  минут 15-20. Соус должен быть густым.
+                </p>
+                <p>
+                  Бешамель: В сотейнике с толстым дном растапливаем сливочное
+                  масло, добавляем муку и быстро перемешиваем, немного
+                  обжариваем. Тонкой струйкой вливаем молоко и постоянно
+                  помешиваем венчиком, что бы не было комков. Добавляем соль,
+                  мускатный орех. На медленном огне, постоянно(!) помешивая,
+                  доводим соус до консистенции сметаны. (Он не должен быть очень
+                  густым, когда он остынет он станет еще гуще).
+                </p>
+                <p>
+                  Сборка: Форму для выпечки смазать сливочным маслом.
+                  Выкладываем листы лазаньи. Сверху соус болоньезе, посыпаем
+                  сыром и смазываем соусом бешамель. Опять листы, болоньезе,
+                  сыр, бешамель. И так пока не закончится место в форме. (У меня
+                  получается 3 слоя) Последний слой листов обильно смазываем
+                  соусом бешамель и посыпаем сыром. Отправляем в духовку на
+                  20-30 минут при 180 градусах.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="kabachkovie_oladiki">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/kabachkovie_oladiki.JPG"
+                alt="Кабачковые оладьи"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Кабачковые оладьи</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🥒 Кабачки - 1 кг (3-4 шт.)</li>
+                  <li>🥚 Яйца - 2шт.</li>
+                  <li>🌿 Зеленый лук</li>
+                  <li>🌿 Укроп</li>
+                  <li>🧄 Чеснок</li>
+                  <li>🌾 Мука - 1 стакан</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Трем кабачки на крупной терке. Добавляем соль, перемешиваем и
+                  оставляем на 15-20 минут, что бы кабачки пустили сок. Хорошо
+                  отжимаем кабачки от сока. Добавляем мелко нарезанную зелень,
+                  пропущенный через пресс чеснок и яйца. Перчим, солим.
+                  Добавляем муку и перемешиваем. (Муку добавляйте постепенно,
+                  если кабачки водянистые, может понадобиться больше муки).
+                  Разогреваем сковороду с маслом. Столовой ложкой выкладываем
+                  тесто и жарим на среднем огне до золотистой корочки с двух
+                  сторон. Подаем со сметаной.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="okroshka">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/okroshka.JPG"
+                alt="Окрошка"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Окрошка с курицей</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🍗 Куриное филе</li>
+                  <li>🥔 Картофель</li>
+                  <li>🥒 Огурцы</li>
+                  <li>🥗 Редис</li>
+                  <li>🥚 Яйца</li>
+                  <li>🌿 Зелень (лук, укроп, петрушка)</li>
+                  <li>🥣 Майонез</li>
+                  <li>🥣 Сметана</li>
+                  <li>🥤 Сыворотка</li>
+                  <li>🌭 Горчица (по желанию)</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Окрошка с курицей на сыворотке - мое любимое летнее блюдо.
+                  Куриное филе, картофель и яйца отварить до готовности. Все
+                  ингредиенты нарезаем небольшими кубиками (редис можно на
+                  терочку). Заправляем майонезом и сметаной в равных пропорциях.
+                  Добавляем соль, горчицу и перемешиваем. Заливаем холодной
+                  сывороткой.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="biscuit">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/biscuit.JPG"
+                alt="Бисквит"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Шифоновый шоколадный бисквит</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🌾 Мука - 200гр</li>
+                  <li>🍬 Сахар - 205гр</li>
+                  <li>🥚 Яйца - 6шт</li>
+                  <li>🍫 Какао - 60гр</li>
+                  <li>🌻 Растительное масло - 125мл</li>
+                  <li>💧 Вода - 165мл</li>
+                  <li>🧁 Разрыхлитель - 10гр</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  В маленькой кастрюле соедините какао и воду. Поставьте на
+                  огонь и доведите до однородности. Остудите до комнатной
+                  температуры. Желтки (6шт) взбейте со 160гр сахара до пышной
+                  светлой массы. Добавьте к желткам растительное масло и
+                  остывшую пасту из какао. Перемешайте. Всыпьте просеянную муку
+                  с разрыхлителем. Перемешайте. Взбейте белки (6шт) с оставшимся
+                  сахаром (45гр) до крепких пиков. Аккуратно вмешайте белки в
+                  шоколадную массу лопаткой складывающими движениями снизу
+                  вверх, стараясь максимально сохранить воздушность. Дно формы
+                  застелить пергаментом, бока ничем не смазываем. Переливаем
+                  тесто в форму. Выпекаем в разогретой до 160 градусов духовке
+                  50-60 минут. Я выпекала в мультиварке на режиме «Выпечка» 80
+                  минут. Готовый бисквит остужаем в форме в перевернутом виде на
+                  решетке.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="pizza">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/pizza2.HEIC"
+                alt="Пицца"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Тесто для пиццы</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🌾 Мука - 350г</li>
+                  <li>💧 Вода - 250мл</li>
+                  <li>🍞 Свежие дрожжи - 10-15г (или 1 ч.л. сухих)</li>
+                  <li>🌻 Оливковое масло - 1 ст.л.</li>
+                  <li>🧂 Соль - 1 ч.л.</li>
+                  <li>🍬 Сахар - 1ч.л.</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  В теплой воде растворить сахар и дрожжи. Оставить на 10 мин.
+                  (Если дрожжи сухие, просто смешать с мукой). Просеять муку,
+                  добавить соль. Влить дрожжевую воду и масло. Замесить тесто.
+                  Вымешивать 5-7 минут пока не станет гладким. Смазать миску
+                  маслом, положить тесто, накрыть и убрать в теплое место на 45
+                  мин. Тесто раскатываем (или растягиваем руками) выкладываем
+                  начинку. Выпекаем при максимальной температуре (200-240)
+                  градусов 10-15 мин.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="blinchiki">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/blinchiki.jpg"
+                alt="Блинчики"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Блинчики на кукурузной муке</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🌽 Кукурузная мука - 7 ст.л. с горкой</li>
+                  <li>🍬 Сахар - 2-3 ст.л.</li>
+                  <li>🥚 Яйца - 2шт.</li>
+                  <li>🥛 Молоко - 300мл</li>
+                  <li>🌻 Растительное масло - 2-3 ст.л.</li>
+                  <li>🧂 Щепотка соли</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Яйца взбить с сахаром и солью. Добавить молоко, перемешать.
+                  Всыпать кукурузную муку. Перемешать венчиком. Добавить
+                  растительное масло. Оставить тесто постоять минут 20, чтобы
+                  мука набухла. Печь блины на разогретой сковороде с двух
+                  сторон. (Тесто нужно постоянно перемешивать, так как
+                  кукурузная мука оседает на дно).
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="kurochka_teriyaki">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/kurochka_teriyaki.jpg"
+                alt="Курочка"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Курочка Терияки</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🍗 Куринное филе - 2 шт.</li>
+                  <li>🌰 Кунжут - 1/2 стакана</li>
+                  <li>🍯 Мед - 3 ст ложки</li>
+                  <li>🧄 Чеснок - 4 зубчика (по вкусу)</li>
+                  <li>🥢 Соевые соус - 1/2 стакана</li>
+                  <li>
+                    🫚 Имбирь - свежий или сухой по вкусу, если сухой примерно
+                    пол чайной ложки
+                  </li>
+                  <li>🌻 Растительное масло - для жарки</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Куринное филе нарежьте на небольшие кусочки, желательно
+                  продолговатой формы. Залейте соевым соусом, соус не должен
+                  полностью покрывать мясо. Добавьте мед, имбирь тертые или
+                  сухой, чеснок. Перемешайте и поставьте в холодильник на пол
+                  часа. Пока курица маринуется, подготовим кунжут. Сырой кунжут
+                  обжариваем на сухой сковороде без масла до золотистого цвета и
+                  пересыпаем в миску. Достаем курицу и обжариваем на
+                  растительном масле до готовности. Выключаем огонь и добавляем
+                  кунжут. Курочка Терияки готова!
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="mayonez">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/mayonez.jpg"
+                alt="Майонез"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Домашний майонез</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🥚 Яйцо - 1шт</li>
+                  <li>🌭 Горчица (в зернах или обычная) - 1.ч.л.</li>
+                  <li>🍋 Лимонный сок - 1.ч.л.</li>
+                  <li>🍬 Сахар - 1.ч.л.</li>
+                  <li>🧂 Соль - 0.5 ч.l.</li>
+                  <li>🌻 Растительное масло - 200мл</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  В чашу блендера разбиваем яйцо (важно не повредить желток),
+                  добавляем соль, сахар, горчицу, лимонный сок. Вливаем
+                  растительное масло. Опускаем погружной блендер так, чтобы он
+                  ПОЛНОСТЬЮ накрыл желток. Взбиваем на максимальной скорости не
+                  поднимая блендер, пока не пойдет густая белая масса (секунд
+                  20-30). Затем потихоньку начинаем поднимать и опускать
+                  блендер, взбивая все масло.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="salat_morkov">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/salat_morkov.jpg"
+                alt="Салат с морковкой"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Салат с морковкой по-корейски</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🥚 Яйца - 3шт.</li>
+                  <li>🥕 Морковь по-корейски - 200г</li>
+                  <li>🍗 Куриное филе - 1 шт.</li>
+                  <li>
+                    🍄 Грибы маринованные - 150г (можно свежие шампиньоны
+                    обжарить)
+                  </li>
+                  <li>🌽 Кукуруза - пол банки</li>
+                  <li>🥣 Майонез</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Куриное филе отварить (или обжарить кусочками со специями).
+                  Грибы если крупные - порезать. Яйца отварить и нарезать
+                  кубиком. Смешать все ингредиенты (курица, морковь, грибы,
+                  яйца, кукуруза). Заправить майонезом. (Можно выкладывать
+                  слоями).
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="salad_ananas">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/salad_ananas.jpg"
+                alt="Салат с ананасом"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Салат с курицей и ананасом</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🍗 Куриное филе - 1 шт. (300-400г)</li>
+                  <li>🥚 Яйца - 3шт.</li>
+                  <li>🍄 Грибы маринованные - 1 банка (300г)</li>
+                  <li>🍍 Ананасы консервированные - 1 банка (300-400г)</li>
+                  <li>🥬 Салат Айсберг - 1 шт. (хотя бы грамм 200)</li>
+                  <li>🥣 Майонез - по вкусу</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Куриное филе нарезаем небольшими кусочками, солим, перчим (я
+                  добавляю паприку и сухой чеснок) и обжариваем на сковороде до
+                  золотистого цвета. Остужаем. Грибы, яйца, ананас (если
+                  кольцами) нарезаем кубиками. Салат Айсберг рвем руками или
+                  крупно нарезаем. Смешиваем все ингредиенты и заправляем
+                  майонезом. Солить салат не нужно, так как майонез и курица уже
+                  соленые.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="recipe-card" id="tikvenij_pirog">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/tikvenij_pirog.jpg"
+                alt="Тыквенный пирог"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Тыквенный пирог</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <div class="ingredients-group">
+                  <h4>Тесто:</h4>
+                  <ul>
+                    <li>🌾 Мука - 200г</li>
+                    <li>🧈 Холодное сливочное масло - 100г</li>
+                    <li>💧 Ледяная вода - 4-5 ст.л.</li>
+                    <li>🧂 Щепотка соли</li>
+                  </ul>
+                </div>
+                <div class="ingredients-group">
+                  <h4>Начинка:</h4>
+                  <ul>
+                    <li>🎃 Тыква - 500г (в очищенном виде)</li>
+                    <li>🥚 Яйца - 2шт.</li>
+                    <li>🥛 Сливки (33%) - 150мл (можно сметану)</li>
+                    <li>🍬 Сахар - 130г</li>
+                    <li>
+                      🤎 Специи: Корица, имбирь, мускатный орех - по 0,5 ч.л.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Тесто: Муку перетереть с холодным маслом в крошку. Добавить
+                  соль и ледяную воду. Быстро замесить тесто, завернуть в пленку
+                  и убрать в холодильник на 30 мин. Начинка: Тыкву нарезать
+                  кубиками и отварить до мягкости (минут 15). Воду слить, тыкву
+                  пюрировать блендером. Добавить сахар, яйца, сливки, специи и
+                  еще раз взбить блендером до однородности. Тесто распределить
+                  по форме (диаметр 20-22см), сделав бортики. Наколоть вилкой.
+                  Выпекать 'корзинку' 10 мин при 180 градусах (можно с грузом).
+                  Вылить начинку в основу. Выпекать 50-60 минут при 170-180
+                  градусах. Начинка должна схватиться, но серединка может
+                  немного дрожать. Остудить пирог в форме (начинка
+                  стабилизируется).
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="morkovnij_pirog">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/morkovnij_pirog.jpg"
+                alt="Морковный пирог"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Морковный пирог</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🌾 Мука - 160г</li>
+                  <li>🌻 Растительное масло - 120мл</li>
+                  <li>🥚 Яйца - 2шт.</li>
+                  <li>🥕 Морковь - 2шт. (250г)</li>
+                  <li>🍬 Сахар - 150г (можно 100г, если морковь сладкая)</li>
+                  <li>🧁 Разрыхлитель - 1 ч.л.</li>
+                  <li>🌰 Грецкие орехи, цедра апельсина, корица (по вкусу)</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Морковь натереть на мелкой терке. Яйца взбить с сахаром. Влить
+                  масло. Добавить морковь и хорошо перемешать. Всыпать муку с
+                  разрыхлителем и корицей (если любите). Добавить измельченные
+                  орехи. Тесто вылить в форму. Выпекать 40-50 минут при 180
+                  градусах. Готовность проверять деревянной палочкой.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="tvorozhnoe_pechenje">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/tvorozhnoe_pechenje.jpg"
+                alt="Творожное печенье"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Творожное печенье</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🌾 Мука - 250г (может уйти чуть больше или меньше)</li>
+                  <li>🧈 Сливочное масло - 110г (холодное)</li>
+                  <li>🧀 Творог - 200г (лучше сухой, в брикете)</li>
+                  <li>🧁 Разрыхлитель - 1 ч.л.</li>
+                  <li>🍬 Сахар (для обсыпки)</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  В муку добавить разрыхлитель и натереть холодное сливочное
+                  масло. Перетереть в крошку. Добавить творог и замесить мягкое,
+                  не липнущее к рукам тесто. Убрать в холодильник на 30 мин.
+                  Раскатать тесто не очень тонко (3-4мм). Вырезать кружочки
+                  стаканом. Обмакнуть кружочек одной стороной в сахар, свернуть
+                  пополам (сахаром внутрь). Опять обмакнуть, и снова свернуть
+                  (получится треугольник). Верхнюю сторону тоже обмакнуть в
+                  сахар. Выложить на противень. Выпекать при 180 градусах около
+                  20-25 минут до золотистого цвета.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="griby_sir">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/griby_sir.jpg"
+                alt="Грибы"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Шампиньоны с сыром</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🍄 Шампиньоны (крупные) - 10-12 шт.</li>
+                  <li>🧀 Сыр твердый - 100г</li>
+                  <li>🧄 Чеснок - 2 зубчика</li>
+                  <li>🥣 Майонез - 1-2 ст.л.</li>
+                  <li>🌿 Зелень (укроп)</li>
+                  <li>🧂 Соль, перец</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  У шампиньонов аккуратно выкрутить ножки (их можно использовать
+                  в другом блюде или порезать и добавить в начинку, но я обычно
+                  не добавляю). Шляпки внутри немного посолить. Сыр натереть на
+                  мелкой терке, добавить майонез, измельченный чеснок и зелень.
+                  Перемешать. Нафаршировать шляпки этой смесью. Выложить в форму
+                  для запекания. Запекать при 200 градусах 20-30 минут до
+                  румяной корочки.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="semga_shpinat">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/semga_shpinat.jpg"
+                alt="Семга"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Семга в сливочном соусе</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🐟 Стейки семги (или любой красной рыбы)</li>
+                  <li>🥛 Сливки (20-33%) - 200мл</li>
+                  <li>🌿 Шпинат (свежий или замороженный) - пучок</li>
+                  <li>🧄 Чеснок - 1-2 зубчика</li>
+                  <li>🧀 Сыр Пармезан (по желанию)</li>
+                  <li>🧂 Соль, перец, лимон</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Семгу посолить, поперчить и сбрызнуть лимоном. Обжарить на
+                  сковороде по 2-3 минуты с каждой стороны (до полуготовности) и
+                  выложить на тарелку. В этой же сковороде обжарить измельченный
+                  чеснок (буквально минуту). Добавить шпинат (если свежий -
+                  порезанный, если замороженный - как есть). Тушить пару минут
+                  пока шпинат не станет мягким. Влить сливки. Посолить,
+                  поперчить. Довести до кипения. Выложить рыбу обратно в
+                  сковороду в соус. Тушить под крышкой 5-10 минут на медленном
+                  огне. (Можно посыпать пармезаном в конце).
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="abrikos_tart">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/abrikos_tart.jpg"
+                alt="Тарт"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Абрикосовый тарт</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <div class="ingredients-group">
+                  <h4>Тесто:</h4>
+                  <ul>
+                    <li>🌾 Мука - 200г</li>
+                    <li>🧈 Холодное сливочное масло - 100г</li>
+                    <li>🍬 Сахар - 1 ст.л.</li>
+                    <li>🥚 Желток - 1 шт.</li>
+                    <li>❄️ Холодная вода - 1-2 ст.л.</li>
+                  </ul>
+                </div>
+                <div class="ingredients-group">
+                  <h4>Заливка:</h4>
+                  <ul>
+                    <li>🥛 Сливки (33%) - 250мл</li>
+                    <li>🍬 Сахар - 80-100г (по вкусу)</li>
+                    <li>🥚 Яйца - 2шт.</li>
+                    <li>🌽 Крахмал (любой) - 1.ст.л.</li>
+                    <li>🌼 Ванилин</li>
+                  </ul>
+                </div>
+                <p>🍑 Абрикосы (свежие или консервированные) - 300г</p>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Замесить песочное тесто (как на тыквенный пирог: крошка +
+                  желток + вода). Убрать в холод. Распределить тесто по форме,
+                  сделав бортики. На тесто выложить половинки абрикосов (срезом
+                  вверх). Смешать все ингредиенты для заливки венчиком до
+                  однородности. Залить этой смесью абрикосы. Выпекать при 180
+                  градусах 40-50 минут. Начинка должна загустеть. Обязательно
+                  полностью остудить перед нарезкой.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="wafles">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/wafles.jpg"
+                alt="Вафли"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Бельгийские вафли</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🌾 Мука - 200г</li>
+                  <li>🍬 Сахар - 60г</li>
+                  <li>🧈 Сливочное масло - 80г (растопленное)</li>
+                  <li>🥛 Молоко - 150мл</li>
+                  <li>🥚 Яйца - 2шт.</li>
+                  <li>🧁 Разрыхлитель - 1 ч.л.</li>
+                  <li>🌼 Ванилин, соль</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Яйца разделить на белки и желтки. Желтки взбить с сахаром.
+                  Влить растопленное масло и молоко. Перемешать. Всыпать муку с
+                  разрыхлителем. Перемешать. Белки взбить с щепоткой соли до
+                  устойчивых пиков. Аккуратно вмешать белки в тесто лопаткой.
+                  Выпекать в вафельнице до золотистого цвета (у меня уходит 4-5
+                  минут на партию).
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="salat_krevetki">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/salat_krevetki.jpg"
+                alt="Салат"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">
+                Салат с креветками и пикантным ананасом
+              </h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🦐 Креветки - 200-300г</li>
+                  <li>🍍 Ананас (свежий или консервированный) - 150г</li>
+                  <li>🥑 Авокадо - 1 шт.</li>
+                  <li>🌿 Руккола - 70г</li>
+                  <li>🧀 Сыр Творожный (Крем-чиз) - 100г</li>
+                  <li>🌶️ Соус Сладкий Чили - 2-3 ст.л.</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Авокадо очистить и нарезать кубиками (можно сбрызнуть лимоном,
+                  чтобы не потемнел). Ананас также нарезать небольшими
+                  кусочками. Креветки очистить. Разогреть сковороду (можно
+                  добавить каплю масла), выложить креветки и ананас. Добавить
+                  соус Сладкий Чили. Прогреть всё вместе, помешивая, 1-2 минуты,
+                  чтобы ингредиенты объединились вкусами и стали теплыми.
+                  Собираем салат: на тарелку выложить рукколу. Сверху выложить
+                  авокадо и теплые креветки с ананасом (вместе с соусом). С
+                  помощью двух чайных ложек сформировать небольшие кнели из
+                  творожного сыра и хаотично выложить на салат. Сразу подавать!
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="tikvennie_pankeiki">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/tikvennie_pankeiki.JPG"
+                alt="Панкейки"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">Тыквенные панкейки</h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🎃 Тыквенное пюре - 200г</li>
+                  <li>🥚 Яйца - 2шт.</li>
+                  <li>🍬 Сахар - 3-4 ст.л.</li>
+                  <li>🥛 Молоко - 200мл</li>
+                  <li>🌾 Мука - 200-250г (смотрите по консистенции)</li>
+                  <li>🧁 Разрыхлитель - 1 ч.л.</li>
+                  <li>🤎 Корица, ваниль</li>
+                  <li>🌻 Растительное масло - 2 ст.л. в тесто</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Яйца взбить с сахаром и специями. Добавить тыквенное пюре и
+                  кефир. Перемешать. Всыпать муку с разрыхлителем. Тесто должно
+                  быть как густая сметана (гуще чем на оладьи). Влить масло и
+                  перемешать. Жарить на сухой(!) сковороде на небольшом огне под
+                  крышкой с двух сторон. Они получаются очень нежные и
+                  ароматные.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="rice_krevetki">
+            <div class="recipe-card__image-wrapper">
+              <img
+                class="recipe-card__image"
+                src="img/rice_krevetki.JPG"
+                alt="Рис"
+                loading="lazy"
+              />
+            </div>
+            <div class="recipe-card__content">
+              <h2 class="recipe-card__title">
+                Рис с креветками в сливочном соусе
+              </h2>
+              <div class="recipe-card__ingredients">
+                <h3>Ингредиенты</h3>
+                <ul>
+                  <li>🍚 Рис (длиннозернистый или басмати)</li>
+                  <li>🦐 Креветки - 300г</li>
+                  <li>🧅 Лук - 1 шт.</li>
+                  <li>🥛 Сливки (20%) - 200мл</li>
+                  <li>🧄 Чеснок - 1-2 зубчика</li>
+                  <li>🥢 Соевый соус - 2 ст.л.</li>
+                  <li>🌿 Зеленый лук</li>
+                </ul>
+              </div>
+              <div class="recipe-card__instructions">
+                <h3>Приготовление</h3>
+                <p>
+                  Рис отварить до готовности. На сковороде обжарить мелко
+                  нарезанный лук и чеснок до золотистости. Добавить очищенные
+                  креветки, жарить 2-3 минуты. Влить соевый соус и сливки.
+                  Прогреть пару минут до загустения соуса. Всыпать рис в
+                  сковороду к соусу, перемешать и прогреть все вместе 1 минуту.
+                  Посыпать зеленым луком при подаче. Это очень быстрое и вкусное
+                  блюдо, как в ресторане!
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
     </div>
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay"></div>
 
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const sidebar = document.querySelector('.sidebar');
-        const overlay = document.querySelector('.mobile-menu-overlay');
+      const menuToggle = document.getElementById("menu-toggle");
+      const sidebar = document.querySelector(".sidebar");
+      const overlay = document.querySelector(".mobile-menu-overlay");
+      const mobileHeader = document.querySelector(".mobile-header");
+      const navLinks = document.querySelectorAll(".nav__link");
+      const sections = document.querySelectorAll(".recipe-card[id]");
 
-        function toggleMenu() {
-            sidebar.classList.toggle('active');
-            overlay.classList.toggle('active');
-            document.body.classList.toggle('no-scroll');
+      function toggleMenu() {
+        sidebar.classList.toggle("active");
+        overlay.classList.toggle("active");
+        document.body.classList.toggle("no-scroll");
+      }
+
+      function setActiveLink(hash) {
+        navLinks.forEach((link) => {
+          const isActive = link.getAttribute("href") === hash;
+          link.classList.toggle("active", isActive);
+        });
+      }
+
+      function setInitialActiveLink() {
+        if (window.location.hash) {
+          setActiveLink(window.location.hash);
+          return;
         }
 
-        menuToggle.addEventListener('click', toggleMenu);
-        overlay.addEventListener('click', toggleMenu);
+        const firstLink = document.querySelector(".nav__link");
+        if (firstLink) {
+          setActiveLink(firstLink.getAttribute("href"));
+        }
+      }
 
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav__link').forEach(link => {
-            link.addEventListener('click', () => {
-                if (sidebar.classList.contains('active')) {
-                    toggleMenu();
-                }
-            });
+      function scrollToSection(hash) {
+        const target = document.querySelector(hash);
+        if (!target) {
+          return;
+        }
+
+        const isMobileViewport = window.matchMedia(
+          "(max-width: 1024px)",
+        ).matches;
+        const headerOffset =
+          isMobileViewport && mobileHeader ? mobileHeader.offsetHeight + 8 : 0;
+        const targetTop =
+          target.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: targetTop,
+          behavior: "smooth",
         });
+      }
+
+      menuToggle.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", toggleMenu);
+      window.addEventListener("hashchange", () =>
+        setActiveLink(window.location.hash),
+      );
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                setActiveLink(`#${entry.target.id}`);
+              }
+            });
+          },
+          {
+            rootMargin: "-30% 0px -50% 0px",
+            threshold: 0.1,
+          },
+        );
+
+        sections.forEach((section) => observer.observe(section));
+      }
+
+      setInitialActiveLink();
+
+      // Close menu when clicking a link
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const hash = link.getAttribute("href");
+          if (!hash || !hash.startsWith("#")) {
+            return;
+          }
+
+          event.preventDefault();
+          setActiveLink(hash);
+          scrollToSection(hash);
+
+          history.replaceState(null, "", hash);
+
+          if (sidebar.classList.contains("active")) {
+            toggleMenu();
+          }
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
